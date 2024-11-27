@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="smk_sealfy.css" />
+    </head>
+
+<body>
+    <div id="overlay" style="display: none;"></div>
+    <div id="loading" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+    
+    <div id="loginForm" style="display: none;">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username :</label>
+            <input style="margin-left:7px; width:190px;" type="text" id="username" name="username" placeholder="Masukkan Username" required>
+            <br>
+            <label for="password">Password  :</label>
+            <input style="margin-left:10px; width:190px;" type="password" id="password" name="password" placeholder="Masukkan Password" required>
+            <br>
+            <div class="btn_login">
+                <button type="submit">Masuk</button>
+                <button type="button" id="closeButton">Tutup</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="signUpForm" style="display: none;">
+        <h2>Sign Up</h2>
+        <form>
+            <label for="signUpUsername">Username :</label>
+            <input style="margin-left:7px; width:190px;" type="text" id="signUpUsername" name="username" placeholder="Masukkan Username" required>
+            <br>
+            <label for="email">Email :</label>
+            <input style="margin-left:40px; width:190px;" type="email" id="email" name="email" placeholder="Masukkan Email" required>
+            <br>
+            <label for="signUpPassword">Password  :</label>
+            <input style="margin-left:9px; width:190px;" type="password" id="signUpPassword" name="password" placeholder="Masukkan Password" required>
+            <br>
+            <div class="btn_signUp">
+                <button type="submit">Daftar</button>
+                <button type="button" id="closeSignUpButton">Tutup</button>
+            </div>
+        </form>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#"><img src="logosmk.png" alt="smkss"></a>
+        </div>
+        <ul>
+            <li><a href="#ct">Beranda</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#jurusan">Jurusan</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#ppdb-section">PPDB</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a class="sign-up" href="#">Sign up</a>
+            <a class="log-in" href="#">Log In</a>
+        </div>
+    </div>
+
+    
+
+    <div class="hero">
+        <img height="600" src="smkss.png" width="1200"/>
+
+        <div class="content">
+
+            <div id="ct" class="ct animated">
+                <h1>Selamat Datang di SMK Salafiyah Syafi'iyyah</h1> 
+                <p>Jl. Madrasah No.102, RT.4/RW.2, Pangkalan Jati, Kec. Cinere, Kota Depok, Jawa Barat 16513</p>
+            </div>
+
+
+            <div class="mtcard animated">
+                <div class="card">
+                    <h1>Beradab</h1>
+                    <p>Menjadikan para siswa SMK Salafiyah Syafi'iyyah memiliki perilaku, sikap, dan tata krama yang baik dalam berinteraksi dengan orang lain, baik di lingkungan sekolah maupun di luar sekolah.</p>
+                </div>
+                <div class="card">
+                    <h1>Berdaya</h1>
+                    <p>Menjadikan para siswa SMK Salafiyah Syafi'iyyah memiliki kemampuan, keterampilan, dan sikap untuk mengelola kehidupan secara mandiri, mengambil inisiatif, mengatasi tantangan, serta berkontribusi positif di lingkungan sekitar.</p>
+                </div>
+                <div class="card">
+                    <h1>Berkarya</h1>
+                    <p>Menjadikan para siswa SMK Salafiyah Syafi'iyyah aktif menciptakan dan mengembangkan ide, baik dalam seni, ilmu pengetahuan, teknologi, atau inovasi, serta berkontribusi positif dengan menerapkan kreativitas dan keterampilan mereka.</p>
+                </div>
+            </div>
+
+        
+            <div id="profil" class="animated">
+                <h1>SMK Salafiyah Syafi'iyyah</h1>
+                <p>SMK Salafiyah Syafi'iyyah adalah sekolah menengah kejuruan yang memiliki komitmen tinggi untuk mencetak generasi unggul di bidang teknologi dengan mengusung motto Beradab, Berdaya, dan Berkarya. Sekolah ini menawarkan berbagai program studi yang relevan dengan kebutuhan industri masa kini, antara lain Teknik Komputer, Rekayasa Perangkat Lunak (RPL), Multimedia, dan Teknik Elektronika. Dengan fasilitas laboratorium modern dan bimbingan dari tenaga pengajar profesional, SMK Salafiyah Syafi'iyyah memberikan pendidikan yang memadukan keterampilan teknis, inovasi, serta nilai-nilai keadaban dan etika Islami. Sekolah ini bertujuan mencetak lulusan yang tidak hanya cakap secara teknis dan mampu bersaing dalam dunia kerja, tetapi juga memiliki akhlak mulia, semangat untuk berkarya, dan daya saing yang tinggi. SMK Salafiyah Syafi'iyyah menjadi tempat yang tepat bagi para siswa untuk mengembangkan potensi diri, siap menjadi tenaga profesional yang berkontribusi positif di era digital.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="isi animated">
+        <div id="jurusan">   
+            <div class="jc">
+                <img src="router.svg">
+                <h1>TKJ</h1>
+                <p>Jurusan Teknik Komputer dan Jaringan (TKJ) adalah program pendidikan yang fokus pada pengembangan keterampilan dan pengetahuan di bidang teknologi informasi, khususnya dalam hal perangkat keras (hardware) dan perangkat lunak (software) serta jaringan komputer. </p>
+            </div>
+    
+            <div class="jc">
+                <img src="code-slash.svg">
+                <h1>RPL</h1>
+                <p>Jurusan RPL mengajarkan siswa tentang berbagai aspek pengembangan perangkat lunak, termasuk analisis kebutuhan, perancangan sistem, pemrograman, pengujian, dan dokumentasi perangkat lunak.</p>
+            </div>
+    
+            <div class="jc">
+                <img src="camera-reels.svg">
+                <h1>Multimedia</h1>
+                <p>Jurusan Multimedia adalah program pendidikan yang fokus pada pengembangan keterampilan dalam pembuatan dan pengelolaan konten digital yang melibatkan teks, gambar, audio, dan video.</p>
+            </div>
+    
+            <div class="jc">
+                <img src="lightning.svg">
+                <h1>Elektronika</h1>
+                <p>Program Jurusan Elektronika Industri mendidik siswa agar mempunyai kemampuan atau keterampilan kepada anak didik pada bidang sistem kontrol dan maintenance peralatan industri berbasis “electrical control” dan “micro processor”.</p>
+            </div>
+        </div>
+        <div class="container animated">
+            <div class="feature-box">
+                <i class="fas fa-check-circle blue-bg"></i>
+                <h3>TERAKREDITASI 'A'</h3>
+                <p>Dengan nilai 'A' yang diberikan Badan Akreditasi Nasional, menunjukkan bahwa kami mampu menyelenggarakan layanan pendidikan yang berkualitas.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-chalkboard-teacher green-bg"></i>
+                <h3>GURU PROFESIONAL</h3>
+                <p>Didukung oleh guru-guru tersertifikasi, sesuai dengan bidang studi dan mata pelajaran masing-masing, dengan kualifikasi pendidikan Sarjana dan Magister</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-tv orange-bg"></i>
+                <h3>BERBASIS MEDIA</h3>
+                <p>Pembelajaran dengan memanfaatkan kemajuan teknologi informasi, menciptakan suasana belajar yang interaktif, efektif, dan menarik bagi siswa</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-language orange-bg"></i>
+                <h3>MULTI BAHASA</h3>
+                <p>Bahasa pengantar di kelas maupun harian yang beragam, Indonesia-Inggris-Arab, mempersiapkan siswa untuk tampil di kancah global dan internasional.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-school blue-bg"></i>
+                <h3>RUANG KELAS NYAMAN</h3>
+                <p>Dilengkapi dengan ruang kelas yang nyaman, ber-AC, akan sangat mendukung keberhasilan proses kegiatan belajar mengajar di kelas</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-child green-bg"></i>
+                <h3>RAMAH ANAK</h3>
+                <p>Kami telah mencanangkan sebagai Sekolah Ramah Anak, sehingga kebijakan kami 'Zero Tolerance' terhadap segala bentuk perundungan (bullying)</p>
+            </div>
+        </div>
+    </div>
+    <div id="galeri" class="slideshow-container">
+        <h1>Galeri</h1>
+        <div class="mySlides fade">
+            <img src="foto (9).jpg" style="width:100%">
+            <div class="text">Kegiatan Baret Camp</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="foto (3).jpg" style="width:100%">
+            <div class="text">Game Baret Camp</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="foto (1).JPG" style="width:100%">
+            <div class="text">Game Baret Camp</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="foto (4).jpg" style="width:100%">
+            <div class="text">Game Baret Camp</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="foto (6).jpg" style="width:100%">
+            <div class="text">Kegiatan Pramuka Saat Baret Camp</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="foto (5).JPG" style="width:100%">
+            <div class="text">Kegiatan Pramuka Saat Baret Camp</div>
+        </div>
+    
+        <!-- Next and previous buttons -->  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center" class="alldot">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    <div id="ppdb-section" class="animated">
+        <h1>Pendaftaran Peserta Didik Baru (PPDB)</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Jadwal</th>
+                    <th>Kegiatan</th>
+                    <th>Informasi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 November 2024 - 10 Juni 2025</td>
+                    <td>Pendaftaran Online</td>
+                    <td>Silakan mendaftar melalui website resmi kami</td>
+                </tr>
+                <tr>
+                    <td>11 - 15 Juni 2025</td>
+                    <td>Verifikasi Berkas</td>
+                    <td>Pengumpulan berkas dilakukan di sekolah</td>
+                </tr>
+                <tr>
+                    <td>16 Juni 2025</td>
+                    <td>Pengumuman Hasil Seleksi</td>
+                    <td>Hasil seleksi akan diumumkan di website</td>
+                </tr>
+                <tr>
+                    <td>17 - 20 Juni 2025</td>
+                    <td>Daftar Ulang</td>
+                    <td>Daftar ulang dilakukan di sekolah dengan membawa berkas yang diperlukan</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="buttons animated">
+            <a class="register" href="https://forms.gle/vk8Tp6UBMeuncJDS7">Register Now</a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="ctrf">
+            <div class="column">
+                <h3>SMK Salafiyah Syafi'iyyah</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Madrasah No.102, RT.4/RW.2, Pangkalan Jati, Kec. Cinere, Kota Depok, Jawa Barat 16513</p>
+                <p><i class="fas fa-phone-alt"></i> Hotline: 021-276500360</p>
+                <p><i class="fas fa-phone-alt"></i> Whatsapp: 0859 2183 7206</p>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/profile.php?id=100008911337772">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/smk.salafiyahsyafiiyyah/">
+                <i class="fab fa-instagram"></i>
+            </a>
+       </div>
+    </div>
+
+    <div class="credit">
+        <div id="bottom_bar">
+            <a href="CIVI.html"><h3 >© Raka Dwi Randika, Mahasiswa STT NF Angkatan 24</h3></a>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
